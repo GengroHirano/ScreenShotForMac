@@ -21,25 +21,29 @@ public class MainFrame implements ActionListener{
 	public MainFrame() {
 		mFrame = new JFrame("ScreenShot!!") ;
 		mFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE) ;
-		mFrame.setSize(300, 60) ;
+		mFrame.setResizable(false) ;
 		
 		Container container = mFrame.getContentPane() ;
 		JPanel buttonPanel = new JPanel() ;
 		
 		mNomalShot = new JButton("ふつう") ;
 		mNomalShot.addActionListener(this) ;
+		mNomalShot.setFocusable(false) ;
 		
 		mRangeShot = new JButton("はんい") ;
 		mRangeShot.addActionListener(this) ;
+		mRangeShot.setFocusable(false) ;
 		
 		mWindowShot = new JButton("窓ごと") ;
 		mWindowShot.addActionListener(this) ;
+		mWindowShot.setFocusable(false) ;
 		
 		buttonPanel.add(mNomalShot) ;
 		buttonPanel.add(mRangeShot) ;
 		buttonPanel.add(mWindowShot) ;
 		
 		container.add(buttonPanel) ;
+		mFrame.pack() ;
 		mFrame.setVisible(true) ;
 	}
 	
