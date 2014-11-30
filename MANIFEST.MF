@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Name: ScreenShot
+Main-Class: edu/self/ScreenShotForMac
+Java-Bean: true
+Created-By: 1.3.1_01 (Sun Microsystems Inc.)
